@@ -82,7 +82,18 @@ You: I've been feeling very anxious lately
 
 The AI uses Claude Sonnet 4.6 model with the following settings:
 
-- **API Key**: Pre-configured (sk-ant-api03-...)
+1. Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and add your Anthropic API key:
+   ```
+   ANTHROPIC_API_KEY=sk-ant-your-api-key-here
+   ```
+
+   Get your API key from: https://console.anthropic.com/
+
 - **Model**: claude-sonnet-4-20250514
 - **Max Tokens**: 1024 per response
 
